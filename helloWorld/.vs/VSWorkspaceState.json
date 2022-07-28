@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\helloWorld",
     "\\user",
-    "\\user\\tamplete",
-    "\\user\\tamplete\\user"
+    "\\user\\templates",
+    "\\user\\templates\\user"
   ],
-  "SelectedNode": "\\user\\tamplete\\user\\index.html",
+  "SelectedNode": "\\helloWorld\\urls.py",
   "PreviewInSolutionExplorer": false
 }
