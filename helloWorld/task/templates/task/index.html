@@ -1,16 +1,13 @@
-<DOCTYPE html>
-<html lang="en">
-	<head>
-		<title> Task! </title>
-	</head>
+{% extends "task/layout.html" %}
+{%block body%}
+	<h1 style="text-align: center;"> Display Task </h1>
+	<ul>
+		{% for task in tasks %}
+		<li style= "font-size: 50px;"> {{task}} </li>
+		{% empty %}
+			<li> No task</li>
+		{% endfor %}
+	</ul>
+	<a href = "{% url "task:add" %}"> Add Task </a>
 
-	<body>
-		<h1 style="text-align: center;"> Task page</h1>
-		<ul">
-			{% for task in tasks %}
-			<li style= "font-size: 50px;"> {{task}} </li>
-			{%endfor%}
-		</ul>
-
-	</body>
-</html>
+{% endblock %}
